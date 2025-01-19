@@ -1,5 +1,3 @@
-# Propaganda in Dictatorships
+# US Election
 
-This site was made for a school project about the book "Corpus delicti"
-
-The site is all german cuz im going to a german school (duh)
+Did people vote against their own rights? If so, what were the reasons
