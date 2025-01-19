@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/05789cd11b.js" crossorigin="anonymous"></script>
+    <title>Startseite</title>
+  </head>
+  <body>
+    <header>
+      <button id="Menubtn" class="menubutton" onclick="openSidebar()"><i id="ButtonIcon" class="fa-solid fa-bars"></i></button>
+      <h1>US Election</h1>
+    </header>
+    <main>
+      <nav class="sidebar" id="Sidebar">
+        <h2>Menu</h2>
+        <ul class="sidebarlist mainlist">
+          <li><a href="index.html" class="navitem active">Home</a></li>
+          <li><a href="demographic.html" class="navitem">Voter Demographics</a></li>
+          <li><a href="interest.html" class="navitem">Was it for their best Interest?</a></li>
+          <li><a href="influences.html" class="navitem">Influences</a></li>
+          <li class="navitem"><a href="https://docs.google.com/document/d/1KP1g33Ao45HocThP0UTQH0-nL-0Vb2ZOtQk9Hw4o030/edit?usp=sharing" class="navitem">Sources</a></li>
+        </ul>
+      </nav>
+      <div id="Overlay" class="overlay" onclick="closeSidebar()"></div>
+      <div class="mainpage">
+        <div class="currentTitle"><h2>Home</h2></div>
+        <div class="imagetheme">
+          <img id="ImageTheme" src="./assets/HomeBanner.webp" alt="" />
+          <p class="bildquelle">Quelle: © BBC</p>
+        </div>
+        <div class="content">
+          <p>
+            <div class="forschungsfrage">
+              Did people vote against their own rights? If so, what were the reasons?
+            </div>
+          </p>
+          <br>
+          <h3>Welcome to Our Project</h3>
+          <p>
+            In the 2024 US Election, many questions arose about how people voted and why. Were voters acting in their best interest? Or were they influenced to vote against their own rights? This website delves into these questions, examining voter demographics, their motivations, and the forces shaping their decisions.
+          </p>
+          <hr />
+          <h3>What You'll Find Here</h3>
+          <div class="overview">
+            <a href="./demographic.html">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./assets/CardVoting.jpg" alt="Voter demographic" />
+                  </div>
+                  <div class="flip-card-back">
+                    <h4>
+                      Voter Demographics
+                    </h4>
+                    <p>Discover how different groups voted</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./interest.html">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./assets/CardRights.jpg" alt="Rights" />
+                  </div>
+                  <div class="flip-card-back">
+                    <h4>
+                      Was it for their best interest?
+                    </h4>
+                    <p>Analyze whether voters acted in their own best interest—or against it.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./influences.html">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./assets/CardInfluence.jpg" alt="Influence" />
+                  </div>
+                  <div class="flip-card-back">
+                    <h4>
+                      What Influenced the Vote?
+                    </h4>
+                    <p>Learn about the key factors that swayed decisions</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

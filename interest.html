@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/05789cd11b.js" crossorigin="anonymous"></script>
+    <title>Startseite</title>
+  </head>
+  <body>
+    <header>
+      <button id="Menubtn" class="menubutton" onclick="openSidebar()"><i id="ButtonIcon" class="fa-solid fa-bars"></i></button>
+      <h1>US Election</h1>
+    </header>
+    <main>
+      <nav class="sidebar" id="Sidebar">
+        <h2>Menu</h2>
+        <ul class="sidebarlist mainlist">
+          <li><a href="index.html" class="navitem">Home</a></li>
+          <li><a href="demographic.html" class="navitem">Voter Demographics</a></li>
+          <li><a href="interest.html" class="navitem active">Was it for their best Interest?</a></li>
+          <li><a href="influences.html" class="navitem">Influences</a></li>
+          <li class="navitem">
+            <a href="https://docs.google.com/document/d/1KP1g33Ao45HocThP0UTQH0-nL-0Vb2ZOtQk9Hw4o030/edit?usp=sharing" class="navitem">Sources</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="Overlay" class="overlay" onclick="closeSidebar()"></div>
+      <div class="mainpage">
+        <div class="currentTitle"><h2>Was it for their best Interest?</h2></div>
+        <div class="imagetheme">
+          <img id="ImageTheme" src="./assets/interestBanner.png" alt="" />
+          <p class="bildquelle">Quelle: © psacunion</p>
+        </div>
+        <div class="content">
+          <p>
+            Everyone has their reasons for voting. People vote based on a variety of personal, emotional, or practical considerations, but sometimes
+            these reasons may not align with what would actually benefit them or their communities.
+          </p>
+          <br />
+          <div class="merkmaleliste">
+            <p>
+              There are several reasons why someone might vote in a way that doesn't align with their own best interest. Some of these reasons might
+              be out of their control, while others stem from personal beliefs or feelings.
+              <br />
+              Some of the Reasons could be:
+            </p>
+            <div class="merkmal">They don’t have all the facts.</div>
+            <div class="merkmal">They feel pressured by family, community, or cultural beliefs.</div>
+            <div class="merkmal">They vote based on emotions or mistrust of politicians, rather than logic and facts.</div>
+          </div>
+          <hr />
+          <h3>How Different Groups Are Affected</h3>
+          <p>
+            Each group of voters has unique concerns and interests, and sometimes those concerns don't always align with their own best interests.
+            Below are examples of how various groups may vote in ways that don't always reflect their needs.
+          </p>
+          <hr />
+          <h4>Immigrants</h4>
+          Immigrants, like any other demographic, care deeply about policies that affect their lives. They are often concerned with fair immigration
+          laws, protection from discrimination, and ensuring their families have access to good opportunities.
+          <div class="vergleich">
+            <strong>Voting for their interests:</strong> Supporting parties that advocate for fair immigration policies, social justice, and
+            protection from discrimination aligns with their interests. These policies offer better opportunities, legal security, and social
+            benefits.
+          </div>
+          <div class="vergleich">
+            <strong>Voting against their interests:</strong> Some immigrants support stricter immigration policies due to religious beliefs, promises
+            about jobs, financial concerns, or a desire to fit in socially.
+          </div>
+          <hr />
+          <h4>Queer Communities</h4>
+          <p>
+            For many in the queer community, voting is heavily influenced by the desire for equal rights, recognition, and safety in society. However,
+            their voting choices sometimes don’t reflect the policies that would most benefit them.
+          </p>
+          <div class="vergleich">
+            <strong>Voting for Their Interests: </strong>Queer individuals often vote for policies that protect their rights, such as
+            anti-discrimination laws, healthcare access, and marriage equality. Supporting parties that advocate for inclusivity and equal treatment
+            directly benefits the queer community.
+          </div>
+          <div class="vergleich">
+            <strong>Voting Against Their Interests: </strong>However, some queer individuals may vote for parties that don’t prioritize LGBTQ+ rights,
+            based on other factors like economic concerns or religious beliefs. This can happen when voters feel their economic situation is more
+            pressing than their civil rights or when they are influenced by family or social pressures that conflict with their personal identity.
+          </div>
+          <hr />
+          <h4>Low-Income Voters</h4>
+          <p>
+            Economic status is one of the most influential factors in voting behavior, but it doesn't always lead to decisions that benefit an
+            individual’s financial well-being.
+          </p>
+          <div class="vergleich">
+            <strong>Voting for Their Interests: </strong>Low-income individuals are more likely to vote for parties that promise higher social safety
+            nets, healthcare programs, and minimum wage increases. These policies are designed to lift people out of poverty and improve their
+            standard of living.
+          </div>
+          <div class="vergleich">
+            <strong>Voting Against Their Interests: </strong>However, some low-income individuals vote for conservative parties that advocate for
+            lower taxes and reduced government spending. This could be because of a belief in "trickle-down economics," where economic growth benefits
+            everyone, or because they are influenced by cultural or social factors that override economic concerns.
+          </div>
+          <hr />
+          <h4>Wealthier Voters</h4>
+          <p>
+            Wealthier individuals, particularly those who have benefited from economic policies favoring deregulation and tax cuts, tend to vote in
+            ways that align with their financial interests.
+          </p>
+          <div class="vergleich">
+            <strong>Voting for Their Interests: </strong> Wealthier individuals often support policies that lower taxes, reduce regulations, and
+            promote business-friendly environments. These policies benefit them financially and help maintain their economic status.
+          </div>
+          <div class="vergleich">
+            <strong>Voting Against Their Interests: </strong>However, some wealthier voters support policies that benefit the general population, such
+            as increased social welfare or taxes on the wealthy. This can happen due to moral reasons, political alignment, or social values, despite
+            these policies not necessarily benefitting their own financial interests.
+          </div>
+          <hr />
+          <h4>Women</h4>
+          <p>Women are an important voting group, with many considering issues related to reproductive rights, healthcare, and gender equality.</p>
+          <div class="vergleich">
+            <strong>Voting for Their Interests: </strong>Women are more likely to vote for policies that address issues such as healthcare access,
+            equal pay, family leave, and reproductive rights. These policies directly benefit women's independence, health, and safety.
+          </div>
+          <div class="vergleich">
+            <strong>Voting Against Their Interests: </strong>However, some women vote for parties that oppose reproductive rights or gender equality,
+            often due to religious beliefs, social pressures, or a prioritization of economic issues over gender-based policies.
+          </div>
+          <hr />
+          <h4>Men</h4>
+          <p>
+            Men, particularly in certain regions, tend to vote with different priorities than women, often influenced by values such as national
+            security, economic policies, and traditional social roles.
+          </p>
+          <div class="vergleich">
+            <strong>Voting for Their Interests: </strong>Men, especially in working-class communities, may support policies that favor job creation,
+            economic growth, and lower taxes. These policies directly benefit men by supporting employment opportunities and financial stability.
+          </div>
+          <div class="vergleich">
+            <strong>Voting Against Their Interests: </strong>However, some men vote for policies that prioritize national security or tax cuts, which
+            may benefit the wealthy but don't always address broader social concerns that might help men in more vulnerable situations, such as
+            healthcare access or support for single fathers.
+          </div>
+          <hr />
+          <h4>Young Voters</h4>
+          <p>
+            Younger voters are often more focused on social issues, such as climate change, education reform, and social justice, and tend to vote
+            more progressively.
+          </p>
+          <div class="vergleich">
+            <strong>Voting for Their Interests: </strong>Young voters support policies that promote climate action, affordable education, and social
+            justice reform. These issues are directly relevant to their futures, addressing concerns about sustainability and equality.
+          </div>
+          <div class="vergleich">
+            <strong>Voting Against Their Interests: </strong>However, some younger voters may choose more conservative candidates due to economic
+            concerns or family influence, even when those candidates do not prioritize progressive social issues like climate change or student loan
+            reform.
+          </div>
+          <hr />
+          <h4>Older Voters</h4>
+          <p>
+            Older voters, particularly those who have experienced the benefits of social programs like Social Security and Medicare, tend to focus on
+            policies that ensure the continuation of these services.
+          </p>
+          <div class="vergleich">
+            <strong>Voting for Their Interests: </strong>Older voters are more likely to support policies that protect Social Security, Medicare, and
+            healthcare access. These programs are vital for their financial security and health.
+          </div>
+          <div class="vergleich">
+            <strong>Voting Against Their Interests: </strong>However, some older voters support candidates or parties that propose cuts to social
+            programs in favor of tax cuts or reducing government spending, potentially putting their own benefits at risk due to ideological beliefs
+            or concerns over national debt.
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

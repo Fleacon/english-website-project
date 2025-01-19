@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/05789cd11b.js" crossorigin="anonymous"></script>
+    <title>Startseite</title>
+  </head>
+  <body>
+    <header>
+      <button id="Menubtn" class="menubutton" onclick="openSidebar()"><i id="ButtonIcon" class="fa-solid fa-bars"></i></button>
+      <h1>US Election</h1>
+    </header>
+    <main>
+      <nav class="sidebar" id="Sidebar">
+        <h2>Menu</h2>
+        <ul class="sidebarlist mainlist">
+          <li><a href="index.html" class="navitem">Home</a></li>
+          <li><a href="demographic.html" class="navitem active">Voter Demographics</a></li>
+          <li><a href="interest.html" class="navitem">Was it for their best Interest?</a></li>
+          <li><a href="influences.html" class="navitem">Influences</a></li>
+          <li class="navitem">
+            <a href="https://docs.google.com/document/d/1KP1g33Ao45HocThP0UTQH0-nL-0Vb2ZOtQk9Hw4o030/edit?usp=sharing" class="navitem">Sources</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="Overlay" class="overlay" onclick="closeSidebar()"></div>
+      <div class="mainpage">
+        <div class="currentTitle"><h2>Voter Demographics</h2></div>
+        <div class="imagetheme">
+          <img id="ImageTheme" src="./assets/voteBanner.jpg" alt="" />
+          <p class="bildquelle">Quelle: © Miami Dade College</p>
+        </div>
+        <div class="content">
+          <h3>How Did Different Groups Vote in the 2024 US Election?</h3>
+          <p>
+            The 2024 US Election revealed distinct voting patterns across various demographic segments. This page explores the distribution of votes
+            among different segments of the population, helping us understand how each group contributed to the election outcome.
+          </p>
+          <hr />
+          <h3>Explore Which People Voted For Who</h3>
+          <p>Click on the buttons to see how many people voted for Kamala Harris or Donald Trump</p>
+          <br />
+          <div class="buttons">
+            <button onclick="switchImage(0)">Age</button>
+            <button onclick="switchImage(1)">Education</button>
+            <button onclick="switchImage(2)">Race or Ethnicity</button>
+            <button onclick="switchImage(3)">Location</button>
+            <button onclick="switchImage(4)">Gender & Age</button>
+            <button onclick="switchImage(5)">Men by Race</button>
+            <button onclick="switchImage(6)">Women by Race</button>
+            <button onclick="switchImage(7)">Suburban Men & Women</button>
+          </div>
+          <div class="image-container">
+            <img src="./assets/demo/cropped_age-1.jpg" alt="Age" class="active" />
+            <img src="./assets/demo/cropped_edu-1.jpg" alt="Education" class="" />
+            <img src="./assets/demo/cropped_race-1.jpg" alt="Race or Ethnicity" class="" />
+            <img src="./assets/demo/cropped_location-1.jpg" alt="Location" class="" />
+            <img src="./assets/demo/cropped_gen+age-1.jpg" alt="Gender & Age" />
+            <img src="./assets/demo/cropped_men-1.jpg" alt="Men by Race" />
+            <img src="./assets/demo/cropped_women-1.jpg" alt="Women by Race" />
+            <img src="./assets/demo/cropped_sububmenwoman-1.jpg" alt="Suburban Men & Women" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

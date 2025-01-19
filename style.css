@@ -1,0 +1,448 @@
+:root {
+  --primary-color-white: hsl(0, 0%, 100%);
+  --primary-color-black: hsl(40, 7%, 9%);
+  --secondary-color-fire-bush: hsl(36, 85%, 54%);
+  --secondary-color-dark-indigo: hsl(262, 79%, 15%);
+  --accent-color-sky-magenta: hsl(299, 45%, 61%);
+
+  --navbar-color: var(--secondary-color-fire-bush);
+  --navbar-item-hover-color: hsl(36, 85%, 47%);
+  --navbar-item-active-color: hsl(36, 85%, 58%);
+  --navbar-item-font-color: var(--primary-color-black);
+  --navbar-divider-color: hsl(36, 85%, 70%);
+  --navbar-width: 400px;
+  --dropdown-color: hsl(36, 85%, 50%);
+
+  --header-width: calc(var(--navbar-width) + var(--content-size));
+  --header-height: 75px;
+  --header-menu-transition-speed: 0.3s;
+  --header-color: var(--secondary-color-dark-indigo);
+
+  --body-color: var(--primary-color-white);
+
+  --flip-card-inner-color: var(--secondary-color-dark-indigo);
+  --flip-card-font-color: var(--primary-color-white);
+}
+
+/*General settings*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--body-color);
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  overflow: scroll;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/*Header*/
+
+header {
+  height: var(--header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header-color);
+  width: var(--header-width);
+  min-width: 425px;
+}
+
+.menubutton {
+  position: absolute;
+  color: var(--accent-color-sky-magenta);
+  left: 0;
+  margin-left: 35px;
+  font-size: 2em;
+}
+
+#ButtonIcon {
+  transition: var(--header-menu-transition-speed);
+}
+
+h1 {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/*Sidebar*/
+
+nav h2 {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.sidebar {
+  position: absolute;
+  left: calc(-1 * var(--navbar-width));
+  width: var(--navbar-width);
+  background-color: var(--navbar-color);
+  min-height: 100%;
+  overflow-x: hidden;
+  transition: left var(--header-menu-transition-speed);
+  z-index: 100000;
+}
+
+.show {
+  left: 0;
+}
+
+.sidebarlist {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.mainlist {
+  margin-top: 20px;
+}
+
+.sidebarlist li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+li a,
+li button {
+  display: block;
+  height: 50px;
+}
+
+.navitem,
+.dropdownbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--navbar-item-font-color);
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.navitem:hover,
+.dropdownbutton:hover {
+  background-color: var(--navbar-item-hover-color);
+}
+
+button i {
+  margin-right: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownbutton {
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownmenu {
+  display: none;
+  background-color: var(--dropdown-color);
+  z-index: 1;
+}
+
+.showdropdown {
+  display: flex;
+}
+
+.active {
+  background-color: var(--navbar-item-active-color);
+}
+
+.divider {
+  border: 1px solid var(--navbar-divider-color);
+  width: 100%;
+}
+
+#DropdownButtonIcon {
+  font-size: 1.2em;
+  margin-right: 5px;
+  transition: 0.2s;
+}
+
+/*Main Content*/
+
+.mainpage {
+  min-width: 300px;
+}
+
+/*when the sidebar is visible the overlay gets displayed*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  margin-top: var(--header-height);
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.currentTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.imagetheme {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+#ImageTheme {
+  width: 100%;
+}
+
+.bildquelle {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.content {
+  margin: 5px 30px;
+}
+
+h3,
+h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+/*flipcard*/
+
+.overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flip-card {
+  margin: 10px;
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: var(--accent-color-sky-magenta);
+  color: var(--primary-color-white);
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: var(--flip-card-inner-color);
+  color: var(--flip-card-font-color);
+  transform: rotateY(180deg);
+  padding: 10px;
+}
+.flip-card img {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.forschungsfrage {
+  font-weight: 500;
+  text-align: center;
+  background-color: var(--secondary-color-fire-bush);
+  width: 100;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.merkmaleliste,
+.vergleichliste,
+.geminsamkeiten,
+.unterschiede {
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+.merkmal,
+.vergleich,
+.diktaturform,
+.gemeinsamkeit,
+.unterschied {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.merkmal,
+.unterschied {
+  background-color: var(--secondary-color-dark-indigo);
+  color: var(--primary-color-white);
+}
+
+.vergleich,
+.gemeinsamkeit {
+  background-color: var(--secondary-color-fire-bush);
+}
+
+.diktaturform {
+  background-color: var(--accent-color-sky-magenta);
+}
+
+b {
+  background-color: var(--accent-color-sky-magenta);
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.content img {
+  width: 100%;
+}
+
+@media screen and (max-width: 520px) {
+  h1 {
+    font-size: 1.7em;
+  }
+  .menubutton {
+    font-size: 1.8em;
+    margin-left: 30px;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: black;
+}
+
+/* Container for the image gallery */
+.image-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make all images hidden by default */
+.image-container img {
+  display: none; /* Hide all images initially */
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Style for the active image (visible) */
+.image-container img.active {
+  display: block; /* Show the active image */
+  opacity: 1; /* Full opacity for active image */
+}
+
+.buttons {
+  margin-bottom: 1em;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.buttons button:hover {
+  background-color: #0056b3;
+}
