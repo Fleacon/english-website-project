@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/05789cd11b.js" crossorigin="anonymous"></script>
+    <title>Startseite</title>
+  </head>
+  <body>
+    <header>
+      <button id="Menubtn" class="menubutton" onclick="openSidebar()"><i id="ButtonIcon" class="fa-solid fa-bars"></i></button>
+      <h1>US Election</h1>
+    </header>
+    <main>
+      <nav class="sidebar" id="Sidebar">
+        <h2>Menu</h2>
+        <ul class="sidebarlist mainlist">
+          <li><a href="index.html" class="navitem">Home</a></li>
+          <li><a href="demographic.html" class="navitem">Voter Demographics</a></li>
+          <li><a href="interest.html" class="navitem">Was it for their best Interest?</a></li>
+          <li><a href="influences.html" class="navitem">How Are People Being Influenced?</a></li>
+          <li>
+            <div class="dropdown navitem active">
+              <button class="dropdownbutton" onclick="showDropdown()">
+                <i class="fa fa-caret-right fa-rotate-90" id="DropdownButtonIcon"></i>
+                Influences
+              </button>
+              <ul class="sidebarlist dropdownmenu showdropdown" id="DropdownMenu">
+                <li><a href="education.html" class="navitem active">Education</a></li>
+                <li><a href="media.html" class="navitem">Media Influence</a></li>
+                <li><a href="religion.html" class="navitem">Religion</a></li>
+                <li><a href="influencers.html" class="navitem">Influencers</a></li>
+                <li><a href="charisma.html" class="navitem">Charismatic Leaders</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navitem">
+            <a href="https://docs.google.com/document/d/1KP1g33Ao45HocThP0UTQH0-nL-0Vb2ZOtQk9Hw4o030/edit?usp=sharing" class="navitem">Sources</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="Overlay" class="overlay" onclick="closeSidebar()"></div>
+      <div class="mainpage">
+        <div class="currentTitle"><h2>Media</h2></div>
+        <div class="imagetheme">
+          <img id="ImageTheme" src="./assets/MediaBanner.jpg" alt="" />
+          <p class="bildquelle">Quelle: © Fox News</p>
+        </div>
+        <div class="content">
+          <p>
+            Media plays a powerful role in shaping public opinion and political behavior. The way news is presented, and the platforms through which
+            it is consumed, directly influence how people perceive issues, form opinions, and ultimately cast their votes. This page explores the
+            impact of media, with a focus on traditional news outlets and the growing role of social media.
+          </p>
+          <hr />
+          <h3>Traditional Media Influence</h3>
+          <p>
+            Traditional media outlets, such as television networks and newspapers, have long been key players in shaping political discourse. The way
+            they report on events or frame issues can significantly influence public opinion.
+          </p>
+          <br />
+          <p>One prominent example is Fox News:</p>
+          <img src="./assets/foxnews.svg" alt="Fox News Media" />
+          <p>
+            According to several studies, Fox News viewers are more likely to support the Republican Party than those who use another source for their
+            news. This happens because of the way issues are presented. Fox News chooses a certain point of view or presents issues in a certain
+            light, which can lead viewers to develop a political opinion that favors Republicans. The research also shows that the influence of Fox
+            News is particularly evident in election years when the political mood in the US is very tense.
+          </p>
+          <hr />
+          <h3>Social Media</h3>
+          <p>
+            Social media is an important source of information these days. Even if not all informations are true. Often false news are deliberately
+            spread or things are misrepresented. The goal is usually the same, to steer people in a certain political direction. Compared to
+            traditional media, social platforms are less regulated, which facilitates the dissemination of such content. These posts can influence
+            public opinion or even influence entire elections. In past US elections, social media played an important role in persuading many
+            Americans to potentially vote against their own rights.
+          </p>
+          <img src="./assets/instagram.jpg" alt="Instagram" />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
