@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/05789cd11b.js" crossorigin="anonymous"></script>
+    <title>Startseite</title>
+  </head>
+  <body>
+    <header>
+      <button id="Menubtn" class="menubutton" onclick="openSidebar()"><i id="ButtonIcon" class="fa-solid fa-bars"></i></button>
+      <h1>US Election</h1>
+    </header>
+    <main>
+      <nav class="sidebar" id="Sidebar">
+        <h2>Menu</h2>
+        <ul class="sidebarlist mainlist">
+          <li><a href="index.html" class="navitem">Home</a></li>
+          <li><a href="demographic.html" class="navitem">Voter Demographics</a></li>
+          <li><a href="interest.html" class="navitem">Was it for their best Interest?</a></li>
+          <li><a href="influences.html" class="navitem">How Are People Being Influenced?</a></li>
+          <li>
+            <div class="dropdown navitem active">
+              <button class="dropdownbutton" onclick="showDropdown()">
+                <i class="fa fa-caret-right fa-rotate-90" id="DropdownButtonIcon"></i>
+                Influences
+              </button>
+              <ul class="sidebarlist dropdownmenu showdropdown" id="DropdownMenu">
+                <li><a href="education.html" class="navitem active">Education</a></li>
+                <li><a href="media.html" class="navitem">Media Influence</a></li>
+                <li><a href="religion.html" class="navitem">Religion</a></li>
+                <li><a href="influencers.html" class="navitem">Influencers</a></li>
+                <li><a href="charisma.html" class="navitem">Charismatic Leaders</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navitem">
+            <a href="https://docs.google.com/document/d/1KP1g33Ao45HocThP0UTQH0-nL-0Vb2ZOtQk9Hw4o030/edit?usp=sharing" class="navitem">Sources</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="Overlay" class="overlay" onclick="closeSidebar()"></div>
+      <div class="mainpage">
+        <div class="currentTitle"><h2>Education</h2></div>
+        <div class="imagetheme">
+          <img id="ImageTheme" src="./assets/educationBanner.jpg" alt="" />
+          <p class="bildquelle">Quelle: © European Education Area</p>
+        </div>
+        <div class="content">
+          <p>
+            Education has emerged as one of the most significant predictors of voting behavior in the United States. In recent years, particularly
+            since the rise of Donald Trump, the divide between college-educated and non-college-educated voters has widened, shaping the political
+            landscape in profound ways.
+          </p>
+          <hr />
+          <h3>The Role of Education in Voting Behavior</h3>
+          <h4>College-Educated Voters</h4>
+          <div class="merkmaleliste">
+            <div class="merkmal">College graduates are more likely to support the Democratic Party.</div>
+            <div class="merkmal">They tend to have higher incomes and are often more exposed to diverse viewpoints through their education.</div>
+            <div class="merkmal">
+              Issues like climate change, social justice, and healthcare resonate strongly with this demographic, aligning with Democratic policies.
+            </div>
+          </div>
+          <br />
+          <h4>Non-College-Educated Voters</h4>
+          <div class="merkmaleliste">
+            <div class="merkmal">Those without a college degree tend to support the Republican Party.</div>
+            <div class="merkmal">
+              This group often experiences economic challenges and resonates with Republican messaging on issues like job security, nationalism, and
+              traditional values.
+            </div>
+            <div class="merkmal">
+              Republican leaders, including Trump, have effectively appealed to the frustrations and concerns of this demographic, particularly in
+              rural and industrial areas.
+            </div>
+          </div>
+          <hr />
+          <h3>Accelerated Divide</h3>
+          <p>
+            Donald Trump’s presidency accelerated this educational divide. His campaign strategies targeted non-college-educated voters by addressing
+            their economic anxieties, opposition to political elites, and concerns over immigration and globalization. Meanwhile, college-educated
+            voters increasingly aligned with Democratic values, rejecting Trump’s rhetoric on social issues and embracing progressive causes.
+          </p>
+          <hr />
+          <h3>Education in Swingstates</h3>
+          <p>
+            Swing states hold a critical role in determining the outcome of elections, and their unique balance of college-educated and
+            non-college-educated voters makes them highly contested battlegrounds. States like Pennsylvania, Michigan, and Wisconsin often exhibit
+            near-equal splits between these two demographic groups, creating an intense focus from both parties. The balance in these states means
+            that appealing to just one of these groups can significantly shift the outcome of an election. Political campaigns invest heavily in swing
+            states, tailoring messages that resonate with both college-educated voters, who tend to favor progressive policies, and
+            non-college-educated voters, who are often drawn to messages emphasizing economic security and traditional values. This dynamic makes
+            swing states pivotal in shaping the direction of national elections.
+          </p>
+          <img src="./assets/Swingstates.webp" alt="A map of Swingstates" />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

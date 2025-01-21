@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/05789cd11b.js" crossorigin="anonymous"></script>
+    <title>Startseite</title>
+  </head>
+  <body>
+    <header>
+      <button id="Menubtn" class="menubutton" onclick="openSidebar()"><i id="ButtonIcon" class="fa-solid fa-bars"></i></button>
+      <h1>US Election</h1>
+    </header>
+    <main>
+      <nav class="sidebar" id="Sidebar">
+        <h2>Menu</h2>
+        <ul class="sidebarlist mainlist">
+          <li><a href="index.html" class="navitem">Home</a></li>
+          <li><a href="demographic.html" class="navitem">Voter Demographics</a></li>
+          <li><a href="interest.html" class="navitem">Was it for their best Interest?</a></li>
+          <li><a href="influences.html" class="navitem">How Are People Being Influenced?</a></li>
+          <li>
+            <div class="dropdown navitem active">
+              <button class="dropdownbutton" onclick="showDropdown()">
+                <i class="fa fa-caret-right fa-rotate-90" id="DropdownButtonIcon"></i>
+                Influences
+              </button>
+              <ul class="sidebarlist dropdownmenu showdropdown" id="DropdownMenu">
+                <li><a href="education.html" class="navitem">Education</a></li>
+                <li><a href="media.html" class="navitem">Media Influence</a></li>
+                <li><a href="religion.html" class="navitem">Religion</a></li>
+                <li><a href="influencers.html" class="navitem">Influencers</a></li>
+                <li><a href="charisma.html" class="navitem active">Charismatic Leaders</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navitem">
+            <a href="https://docs.google.com/document/d/1KP1g33Ao45HocThP0UTQH0-nL-0Vb2ZOtQk9Hw4o030/edit?usp=sharing" class="navitem">Sources</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="Overlay" class="overlay" onclick="closeSidebar()"></div>
+      <div class="mainpage">
+        <div class="currentTitle"><h2>Charismatic Leaders</h2></div>
+        <div class="imagetheme">
+          <img id="ImageTheme" src="./assets/CharismaBanner.jpg" alt="" />
+          <p class="bildquelle">Quelle: © Ray Williams - Medium</p>
+        </div>
+        <div class="content">
+          <p>
+            Charisma has always been an asset for political leaders, but in today’s highly polarized and media-driven environment, it has become more
+            critical than ever. A charismatic leader has the unique ability to connect with voters on an emotional level, reflect their values, and
+            inspire loyalty. This trait is particularly influential during times of crisis, such as economic downturns or war, when voters look for a
+            leader who can offer hope and solutions.
+          </p>
+          <hr />
+          <h3>Growing Importance of Charisma</h3>
+          <p>
+            Charisma allows candidates to transcend policy specifics and appeal directly to voters' emotions. By forging an emotional connection,
+            charismatic leaders can resonate with the electorate’s values, aspirations, and fears. This ability is especially effective in crisis
+            situations, where voters are more likely to seek strong, visionary leaders who project confidence and stability.
+          </p>
+          <br />
+          <h4>Why Voters Seek Charismatic Leaders</h4>
+          <p>
+            In difficult times, voters often look for a "savior" figure—a leader who can not only provide tangible solutions but also inspire hope for
+            a better future. Charismatic politicians who articulate a compelling vision for the future tend to gain more public support, especially
+            when they:
+          </p>
+          <div class="merkmaleliste">
+            <div class="merkmal">Offer concrete solutions to pressing problems.</div>
+            <div class="merkmal">Inspire optimism by painting a picture of a brighter tomorrow.</div>
+            <div class="merkmal">Demonstrate moral conviction and authenticity in their leadership.</div>
+          </div>
+          <hr />
+          <h3>Tactics of Charismatic Leaders</h3>
+          <p>Charismatic politicians employ a variety of tactics to captivate and inspire their audiences:</p>
+          <div class="vergleichliste">
+            <div class="vergleich">
+              <strong>Employing Inspirational Language</strong><br />Leaders use uplifting and motivational rhetoric to energize their supporters and
+              build a sense of collective purpose.
+            </div>
+            <div class="vergleich">
+              <strong>Using Moral Conviction Words</strong><br />Terms like "should," "must," and "belief" convey a strong sense of urgency and moral
+              clarity. These words suggest that the leader is guided by deeply held values, making their message more compelling.
+            </div>
+            <div class="vergleich">
+              <strong>Utilizing Metaphors and Analogies</strong><br />Framing complex ideas with relatable metaphors and analogies helps charismatic
+              leaders connect with audiences. For example, a struggling economy might be described as a "sinking ship" that the leader promises to
+              "steer to safety," evoking both urgency and reassurance.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/05789cd11b.js" crossorigin="anonymous"></script>
+    <title>Startseite</title>
+  </head>
+  <body>
+    <header>
+      <button id="Menubtn" class="menubutton" onclick="openSidebar()"><i id="ButtonIcon" class="fa-solid fa-bars"></i></button>
+      <h1>US Election</h1>
+    </header>
+    <main>
+      <nav class="sidebar" id="Sidebar">
+        <h2>Menu</h2>
+        <ul class="sidebarlist mainlist">
+          <li><a href="index.html" class="navitem">Home</a></li>
+          <li><a href="demographic.html" class="navitem">Voter Demographics</a></li>
+          <li><a href="interest.html" class="navitem">Was it for their best Interest?</a></li>
+          <li><a href="influences.html" class="navitem">How Are People Being Influenced?</a></li>
+          <li>
+            <div class="dropdown navitem active">
+              <button class="dropdownbutton" onclick="showDropdown()">
+                <i class="fa fa-caret-right fa-rotate-90" id="DropdownButtonIcon"></i>
+                Influences
+              </button>
+              <ul class="sidebarlist dropdownmenu showdropdown" id="DropdownMenu">
+                <li><a href="education.html" class="navitem">Education</a></li>
+                <li><a href="media.html" class="navitem">Media Influence</a></li>
+                <li><a href="religion.html" class="navitem active">Religion</a></li>
+                <li><a href="influencers.html" class="navitem">Influencers</a></li>
+                <li><a href="charisma.html" class="navitem">Charismatic Leaders</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navitem">
+            <a href="https://docs.google.com/document/d/1KP1g33Ao45HocThP0UTQH0-nL-0Vb2ZOtQk9Hw4o030/edit?usp=sharing" class="navitem">Sources</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="Overlay" class="overlay" onclick="closeSidebar()"></div>
+      <div class="mainpage">
+        <div class="currentTitle"><h2>Religion</h2></div>
+        <div class="imagetheme">
+          <img id="ImageTheme" src="./assets/religionBanner.jpg" alt="" />
+          <p class="bildquelle">Quelle: © Landesärztekammer Hessen</p>
+        </div>
+        <div class="content">
+          <p>
+            Religion has long been one of the most reliable predictors of voting behavior in the United States. For many voters, their political
+            preferences are deeply tied to their religious beliefs, particularly on social and moral issues such as abortion, homosexuality, and even
+            economic policies. The influence of religion on voting varies by faith, denomination, and the level of religious engagement, making it a
+            powerful force in shaping political landscapes.
+          </p>
+          <hr />
+          <h3>Religion as a Predictor for voting Behavior</h3>
+          <p>
+            Religious affiliation and the degree of faith observance significantly influence voter choices. Many people align their political
+            decisions with their religious values, using their faith as a moral compass to evaluate candidates and policies. This connection is most
+            apparent in debates over contentious issues like reproductive rights and LGBTQ+ equality, where faith-based teachings often guide
+            opinions.
+          </p>
+          <hr />
+          <h3>Religious Groups and Party Alignment</h3>
+          <p>Different religious communities exhibit distinct political tendencies:</p>
+          <div class="vergleichliste">
+            <div class="vergleich">
+              <strong>Jewish and Catholic Voters</strong>: These groups traditionally lean toward the Democratic Party, largely due to shared
+              priorities like social justice, economic equality, and immigration reform.
+            </div>
+            <div class="vergleich">
+              <strong>Evangelical Protestants</strong>: Evangelicals are strong supporters of the Republican Party, aligning with its conservative
+              stances on issues such as abortion, same-sex marriage, and religious freedom.
+            </div>
+          </div>
+          <br>
+            <p>
+              Evangelicals are especially notable for the degree to which their faith influences their voting behavior, often prioritizing their
+              religious values above other considerations. On the other hand, non-evangelical Christians—such as mainline Protestants and Orthodox
+              Christians—tend to incorporate their faith into their decisions while also factoring in broader concerns, such as economic policy or
+              environmental issues. For non-Christians, media and other cultural influences often have a greater impact than religion itself,
+              reflecting a broader, more secular approach to politics.
+            </p>
+            <hr />
+            <h3>Religion and Political Ideology</h3>
+            <p>
+              Religious influence is stronger among conservatives than among liberals or moderates. For many conservative voters, faith is central to
+              their worldview and directly shapes their preferences on candidates and policies. Liberals, while often guided by moral principles that
+              may be rooted in faith, are typically influenced by other factors, such as education or cultural norms, when making political decisions.
+            </p>
+            <hr />
+            <h3>Churches and Religious Leaders</h3>
+            <p>
+              Churches and pastors hold significant potential to influence voter behavior, especially if they actively engage with political issues.
+              By addressing topics like social justice, economic inequality, or moral dilemmas from a faith perspective, religious leaders can shape
+              their congregants' views and encourage political participation.
+            </p>
+            <br />
+            <img src="./assets/church.jpg" alt="" />
+            <br />
+            <p>
+              While some argue that churches should remain apolitical, others believe that faith-based institutions have a moral responsibility to
+              guide their communities in making decisions that align with their values. Greater involvement from churches, particularly in rural and
+              evangelical communities, could potentially shift voter behavior on a broader scale.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

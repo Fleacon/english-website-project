@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/05789cd11b.js" crossorigin="anonymous"></script>
+    <title>Startseite</title>
+  </head>
+  <body>
+    <header>
+      <button id="Menubtn" class="menubutton" onclick="openSidebar()"><i id="ButtonIcon" class="fa-solid fa-bars"></i></button>
+      <h1>US Election</h1>
+    </header>
+    <main>
+      <nav class="sidebar" id="Sidebar">
+        <h2>Menu</h2>
+        <ul class="sidebarlist mainlist">
+          <li><a href="index.html" class="navitem">Home</a></li>
+          <li><a href="demographic.html" class="navitem">Voter Demographics</a></li>
+          <li><a href="interest.html" class="navitem">Was it for their best Interest?</a></li>
+          <li><a href="influences.html" class="navitem">How Are People Being Influenced?</a></li>
+          <li>
+            <div class="dropdown navitem active">
+              <button class="dropdownbutton" onclick="showDropdown()">
+                <i class="fa fa-caret-right fa-rotate-90" id="DropdownButtonIcon"></i>
+                Influences
+              </button>
+              <ul class="sidebarlist dropdownmenu showdropdown" id="DropdownMenu">
+                <li><a href="education.html" class="navitem">Education</a></li>
+                <li><a href="media.html" class="navitem">Media Influence</a></li>
+                <li><a href="religion.html" class="navitem">Religion</a></li>
+                <li><a href="influencers.html" class="navitem active">Influencers</a></li>
+                <li><a href="charisma.html" class="navitem">Charismatic Leaders</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navitem">
+            <a href="https://docs.google.com/document/d/1KP1g33Ao45HocThP0UTQH0-nL-0Vb2ZOtQk9Hw4o030/edit?usp=sharing" class="navitem">Sources</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="Overlay" class="overlay" onclick="closeSidebar()"></div>
+      <div class="mainpage">
+        <div class="currentTitle"><h2>Influencers</h2></div>
+        <div class="imagetheme">
+          <img id="ImageTheme" src="./assets/InfluencersBanner.webp" alt="" />
+          <p class="bildquelle">Quelle: © Landesärztekammer Hessen</p>
+        </div>
+        <div class="content">
+          <p>
+            In the digital age, influencers have become a significant force in political campaigns, especially in reaching younger voters who spend
+            much of their time on social media. With their ability to connect authentically with large audiences, influencers have transformed how
+            political messages are delivered, creating new pathways for engaging voters and shaping public opinion.
+          </p>
+          <hr />
+          <h3>Influencers and Political Campaigns</h3>
+          <h4>Reaching new Audience</h4>
+          <p>
+            Influencers provide political campaigns with an opportunity to reach younger and more digitally connected voters. Platforms like TikTok,
+            Instagram, and YouTube allow influencers to share political messages in ways that resonate with their followers. As nearly half of
+            Americans now receive their news from social media, influencers play a crucial role in bridging the gap between politics and youth
+            culture.
+          </p>
+          <br />
+          <h4>Authenticity</h4>
+          <p>
+            One of the reasons influencers are so effective is their perceived authenticity. Unlike traditional advertisements, influencers are seen
+            as relatable and trustworthy figures, making their endorsements or commentary feel more genuine. This can help political campaigns connect
+            with voters who might otherwise feel disengaged or skeptical of traditional political messaging.
+          </p>
+          <hr />
+          <h3>Influencers and Paid Promotions</h3>
+          <p>
+            Political parties have increasingly turned to influencers to promote their platforms and candidates. By leveraging the influencer’s reach
+            and credibility, campaigns can target specific demographics with tailored messages.
+          </p>
+          <br />
+          <p>For Example:</p>
+          <p>In the 2020 election, the Joe Biden campaign reportedly allocated $1 million to pay influencers to promote his candidacy.</p>
+          <hr />
+          <h3>Bryce Hall</h3>
+          <p>
+            Bryce Hall, a social media influencer with over 28 million followers, illustrates both the power and the potential pitfalls of influencers
+            in politics. In one instance, Hall made a controversial comment, stating: <br />
+            "If Kamala Harris becomes President, I'm definitely gonna off myself," a statement that garnered over 2 million views.
+          </p>
+          <blockquote
+            class="tiktok-embed"
+            cite="https://www.tiktok.com/@brycehall/video/7395370379516103979"
+            data-video-id="7395370379516103979"
+            style="max-width: 605px; min-width: 325px"
+          >
+            <section>
+              <a target="_blank" title="@brycehall" href="https://www.tiktok.com/@brycehall?refer=embed">@brycehall</a>
+              <p></p>
+              <a
+                target="_blank"
+                title="♬ original sound - Bryce Hall"
+                href="https://www.tiktok.com/music/original-sound-7395370356969081646?refer=embed"
+                >♬ original sound - Bryce Hall</a
+              >
+            </section>
+          </blockquote>
+          <script async src="https://www.tiktok.com/embed.js"></script>
+          <p>
+            This example highlights the wide-reaching impact of influencers but also underscores the risks of unregulated or inflammatory political
+            commentary on platforms with massive audiences.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
