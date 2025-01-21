@@ -411,7 +411,7 @@ footer a {
 /* Container for the image gallery */
 .image-container {
   width: 100%;
-  height: 470px;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
