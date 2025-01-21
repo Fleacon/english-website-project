@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/05789cd11b.js" crossorigin="anonymous"></script>
+    <title>Startseite</title>
+  </head>
+  <body>
+    <header>
+      <button id="Menubtn" class="menubutton" onclick="openSidebar()"><i id="ButtonIcon" class="fa-solid fa-bars"></i></button>
+      <h1>US Election</h1>
+    </header>
+    <main>
+      <nav class="sidebar" id="Sidebar">
+        <h2>Menu</h2>
+        <ul class="sidebarlist mainlist">
+          <li><a href="index.html" class="navitem">Home</a></li>
+          <li><a href="demographic.html" class="navitem">Voter Demographics</a></li>
+          <li><a href="interest.html" class="navitem">Was it for their best Interest?</a></li>
+          <li><a href="influences.html" class="navitem">How Are People Being Influenced?</a></li>
+          <li>
+            <div class="dropdown navitem">
+              <button class="dropdownbutton" onclick="showDropdown()">
+                <i class="fa fa-caret-right" id="DropdownButtonIcon"></i>
+                Influences
+              </button>
+              <ul class="sidebarlist dropdownmenu" id="DropdownMenu">
+                <li><a href="education.html" class="navitem">Education</a></li>
+                <li><a href="media.html" class="navitem">Media Influence</a></li>
+                <li><a href="religion.html" class="navitem">Religion</a></li>
+                <li><a href="influencers.html" class="navitem">Influencers</a></li>
+                <li><a href="charisma.html" class="navitem">Charismatic Leaders</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navitem active">
+            <a href="impressum.html" class="navitem">Imprint</a>
+          </li>
+          <li class="navitem">
+            <a href="https://docs.google.com/document/d/1KP1g33Ao45HocThP0UTQH0-nL-0Vb2ZOtQk9Hw4o030/edit?usp=sharing" class="navitem">Sources</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="Overlay" class="overlay" onclick="closeSidebar()"></div>
+      <div class="mainpage">
+        <div class="currentTitle"><h2>Imprint</h2></div>
+        <div class="content">
+          <h2>Project Coordinators</h2>
+          David Noskov <br />
+          Luka Wenzel <br />
+          Niklas Jung <br />
+          Intasar Ahmad
+          <h2>Postal Address</h2>
+          <p>
+            Theodor-Litt-Schule<br />
+            Ringallee 62<br />
+            35390 Gießen, Germany
+          </p>
+          <h2>Contact</h2>
+          <p>E-Mail: <a href="mailto:david.noskov@tls-giessen.eu">david.noskov@tls-giessen.eu</a></p>
+          <h2>School</h2>
+          <p>
+            Theodor-Litt-Schule<br />
+            Ringallee 62<br />
+            35390 Gießen, Germany<br />
+            Website: <a href="https://wp.tls-gi.de" target="_blank">https://wp.tls-gi.de</a>
+          </p>
+
+          <h2>Supervisors</h2>
+          Herr Koch <br />
+          Frau Schaum <br />
+
+          <h2>Disclaimer</h2>
+
+          <h3>Liability for Content</h3>
+          <p>
+            As service providers, we are responsible for our own content on these pages in accordance with § 7 Abs.1 TMG under general laws. However,
+            according to §§ 8 to 10 TMG, we are not obligated to monitor transmitted or stored external information or to investigate circumstances
+            that indicate illegal activity.
+          </p>
+          <p>
+            Obligations to remove or block the use of information under general laws remain unaffected. Liability in this regard, however, is only
+            possible from the point at which we become aware of a specific legal infringement. Upon becoming aware of such violations, we will remove
+            the content immediately.
+          </p>
+
+          <h3>Liability for Links</h3>
+          <p>
+            Our website contains links to external third-party websites over whose content we have no influence. Therefore, we cannot assume any
+            liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked
+            pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the
+            time of linking.
+          </p>
+          <p>
+            Permanent monitoring of the linked pages' content is, however, unreasonable without concrete evidence of a violation. Upon becoming aware
+            of violations, we will remove such links immediately.
+          </p>
+
+          <h3>Copyright</h3>
+          <p>
+            The content and works created by the operators of this website are subject to German copyright law. The duplication, processing,
+            distribution, or any kind of exploitation outside the limits of copyright law requires the written consent of the respective author or
+            creator. Downloads and copies of this site are permitted for private, non-commercial use only.
+          </p>
+          <p>
+            Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular,
+            third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly.
+            Upon becoming aware of such violations, we will remove the content immediately.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
