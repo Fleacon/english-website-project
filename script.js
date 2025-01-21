@@ -24,11 +24,19 @@ function showDropdown() {
 
 function switchImage(index) {
   const images = document.querySelectorAll(".image-container img");
+  const percentages = document.querySelectorAll(".pog");
   images.forEach((img, i) => {
     if (i === index) {
       img.classList.add("active");
     } else {
       img.classList.remove("active");
+    }
+  });
+  percentages.forEach((text, i) => {
+    if (i === index) {
+      text.classList.add("active");
+    } else {
+      text.classList.remove("active");
     }
   });
 }
